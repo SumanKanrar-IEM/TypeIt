@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <title>PDF Viewer</title>
+  <script src="jquery-1.11.0.min.js"></script>
+  <script src="pdf.js"></script>
+  <script src="pdf-viewer.js"></script>
+  <script >
+    PDFJS.cMapUrl = './cmaps/';
+    PDFJS.cMapPacked = true;
+    PDFJS.verbosity = 2;
+    var viewer;
+
+    function init() {
+      viewer = new BookViewer();
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <div id="book-viewer">
+    </div>
+  </section>
+</body>
+</html>
